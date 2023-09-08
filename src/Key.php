@@ -1,0 +1,122 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Bic\Keyboard;
+
+enum Key: int implements KeyInterface
+{
+    case SPACE = 1000;
+    case APOSTROPHE = 1001;
+    case COMMA = 1002;
+    case MINUS = 1003;
+    case PERIOD = 1004;
+    case SLASH = 1005;
+    case KEY_0 = 1006;
+    case KEY_1 = 1007;
+    case KEY_2 = 1008;
+    case KEY_3 = 1009;
+    case KEY_4 = 1010;
+    case KEY_5 = 1011;
+    case KEY_6 = 1012;
+    case KEY_7 = 1013;
+    case KEY_8 = 1014;
+    case KEY_9 = 1015;
+    case SEMICOLON = 1016;
+    case EQUAL = 1017;
+    case A = 1018;
+    case B = 1019;
+    case C = 1020;
+    case D = 1021;
+    case E = 1022;
+    case F = 1023;
+    case G = 1024;
+    case H = 1025;
+    case I = 1026;
+    case J = 1027;
+    case K = 1028;
+    case L = 1029;
+    case M = 1030;
+    case N = 1031;
+    case O = 1032;
+    case P = 1033;
+    case Q = 1034;
+    case R = 1035;
+    case S = 1036;
+    case T = 1037;
+    case U = 1038;
+    case V = 1039;
+    case W = 1040;
+    case X = 1041;
+    case Y = 1042;
+    case Z = 1043;
+    case LEFT_BRACKET = 1044;
+    case BACKSLASH = 1045;
+    case RIGHT_BRACKET = 1046;
+    case GRAVE_ACCENT = 1047;
+    case ESCAPE = 1048;
+    case ENTER = 1049;
+    case TAB = 1050;
+    case BACKSPACE = 1051;
+    case INSERT = 1052;
+    case DELETE = 1053;
+    case RIGHT = 1054;
+    case LEFT = 1055;
+    case DOWN = 1056;
+    case UP = 1057;
+    case PAGE_UP = 1058;
+    case PAGE_DOWN = 1059;
+    case HOME = 1060;
+    case END = 1061;
+    case CAPS_LOCK = 1062;
+    case SCROLL_LOCK = 1063;
+    case NUM_LOCK = 1064;
+    case PRINT_SCREEN = 1065;
+    case PAUSE = 1066;
+    case F1 = 1067;
+    case F2 = 1068;
+    case F3 = 1069;
+    case F4 = 1070;
+    case F5 = 1071;
+    case F6 = 1072;
+    case F7 = 1073;
+    case F8 = 1074;
+    case F9 = 1075;
+    case F10 = 1076;
+    case F11 = 1077;
+    case F12 = 1078;
+    case F13 = 1079;
+    case F14 = 1080;
+    case F15 = 1081;
+    case KP_0 = 1082;
+    case KP_1 = 1083;
+    case KP_2 = 1084;
+    case KP_3 = 1085;
+    case KP_4 = 1086;
+    case KP_5 = 1087;
+    case KP_6 = 1088;
+    case KP_7 = 1089;
+    case KP_8 = 1090;
+    case KP_9 = 1091;
+    case KP_DECIMAL = 1092;
+    case KP_DIVIDE = 1093;
+    case KP_MULTIPLY = 1094;
+    case KP_SUBTRACT = 1095;
+    case KP_ADD = 1096;
+    case KP_ENTER = 1097;
+    case KP_EQUAL = 1098;
+    case LEFT_SHIFT = 1099;
+    case LEFT_CONTROL = 1100;
+    case LEFT_ALT = 1101;
+    case LEFT_SUPER = 1102;
+    case RIGHT_SHIFT = 1103;
+    case RIGHT_CONTROL = 1104;
+    case RIGHT_ALT = 1105;
+    case RIGHT_SUPER = 1106;
+    case MENU = 1107;
+
+    public function getCode(): int
+    {
+        return $this->value;
+    }
+}
