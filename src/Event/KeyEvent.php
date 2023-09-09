@@ -14,7 +14,6 @@ abstract class KeyEvent
 {
     /**
      * @param TContext $target
-     * @param KeyInterface $key
      * @psalm-param int-mask-of<Modifier::*>|Modifier::* $modifiers
      */
     public function __construct(
