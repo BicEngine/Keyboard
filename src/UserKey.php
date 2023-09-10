@@ -4,15 +4,19 @@ declare(strict_types=1);
 
 namespace Bic\Keyboard;
 
+/**
+ * @psalm-import-type KeyID from KeyInterface
+ * @phpstan-import-type KeyID from KeyInterface
+ */
 final class UserKey implements KeyInterface
 {
     /**
-     * @var array<int<0, max>, self>
+     * @var array<KeyID, KeyInterface>
      */
     private static array $instances = [];
 
     /**
-     * @param int<0, max> $id
+     * @param KeyID $id
      *
      * @internal Please use {@see UserKey::create()} instead.
      */
@@ -27,7 +31,9 @@ final class UserKey implements KeyInterface
     }
 
     /**
-     * @param int<0, max> $id
+     * @param KeyID $id
+     *
+     * @psalm-suppress all
      */
     public static function create(int $id): KeyInterface
     {
